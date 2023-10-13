@@ -1,0 +1,328 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:#9de78a;
+  overflow: hidden;
+}
+.img{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+#img{
+  border-top: 2px solid white;
+  justify-content: center;
+  align-items: center;
+  max-width:900px;
+  max-height:900px;
+  position: relative;
+ 
+ 
+
+}
+
+.detail{
+
+  display: flex;
+
+}
+.left{
+  flex: 1;
+  position: absolute;
+  top: 85px;
+  left: 70px;
+  margin: 7px;
+ 
+  font-size: 1.3em;
+}
+.right{
+  flex: 1;
+}
+.left li{
+  display: flex;
+  text-decoration: none;
+  margin: 6px;
+  margin-bottom: 19px;
+  
+}
+.right{
+  flex: 1;
+  position: absolute;
+  top: 85px;
+  right: 40px;
+  margin: 7px;
+  font-size: 1.3em;
+}
+ .right li{
+  display: flex;
+  text-decoration: none;
+  margin:15px;
+  margin-bottom:40px;
+  
+} 
+.play{
+  display: flex;
+  
+}
+.bol{
+  
+  position:absolute;
+  bottom:60px;
+  left: 50px;
+ width: 100px;
+ height: 100px;
+}
+.bat{
+
+  position:absolute;
+  bottom:60px;
+  right: 50px;
+ width: 100px;
+ height: 100px;
+}
+.animi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+  height: 100vh; 
+}
+.animi h1 {
+  font-size: 4em;
+  opacity: 0.3;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#timer {
+  font-size: 1.5em;
+}
+header h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left #b1{
+  margin-top: 100px;
+}
+.player{
+  margin-top: 100px;
+}
+.left .balaction{
+  position: relative;
+  top: 150px;
+  right: 10px;
+  font-size: 1em;
+}
+.right .bataction{
+  position: relative;
+  top: 80px;
+  font-size: 1em;
+  left: 30px;
+  width: 150px;
+}
+@media all and (max-width:1441px){
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+    border: 2px solid black;
+
+}
+#img{
+  border-top: 2px solid white;
+  max-width:100%;
+  height:600px;
+  overflow: hidden;
+ 
+}
+.left{
+  flex: 1;
+  position: absolute;
+  top:180px;
+  left:20px;
+  margin:2px;
+ 
+  font-size:1em;
+}
+.left li{
+  display: flex;
+  text-decoration: none;
+  margin: 3px;
+  margin-bottom:10px;
+  
+}
+.set-top{
+  position: relative;
+  top: -90px;
+}
+#b1{
+  position: relative;
+  top: 180px;
+  left: -10px;
+}
+.right {
+  flex: 1;
+  position: absolute;
+  top: 85px;
+  margin: 7px;
+  font-size: 1em;
+}
+
+.right li {
+  display: flex;
+  text-decoration: none;
+  margin: 3px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  position: relative;
+  left: 100px;
+  top: -5px;
+}
+
+.set-top {
+  position: relative;
+  top: -90px;
+}
+
+#bm1 {
+  position: relative;
+  top: 240px;
+  left: 100px;
+  margin-right: 0;
+  width: 80px; 
+}
+
+#bm2 {
+  position: relative;
+  top: 260px;
+  left: 110px;
+  margin: 0;
+  width: 80px; 
+}
+
+.right .bataction{
+  text-align: center;
+  font-size: 1em;
+  top: 299px;
+  left:90px;
+}
+.bol{
+  position:relative;
+  bottom:170px;
+  left: 10px;
+ width:10vh;
+
+}
+.bat{
+  position:relative;
+  bottom:170px;
+  right:10px;
+  width:10vh;
+  justify-self:end;
+
+
+}
+.animi {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  line-height: 40px;
+  top: -5px;
+  width: 100%;
+  height: 100vh;
+}
+
+.animi h1 {
+  font-size: 2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#timer {
+  
+  font-size: 1.1em;
+}
+.play{
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+#b1,.left .balaction{
+  margin-left: 10px;
+}
+#bm1,#bm2{
+ 
+  margin-right: 39px;
+ 
+}
+
+}
+@media all and (max-width:400px){
+  .animi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+    height: 100vh; 
+  }
+  
+  .animi h1 {
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  #timer {
+    
+    font-size: 1.5em;
+  }
+  .right .bataction{
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    top: 300px;
+    left:90px;
+  }
+}
+.mainbody{
+  background:url(/image/mainbg.png.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+.home{
+  margin-top: 50px;
+  background:hsla(255,1%,100%,0.6);
+  opacity: 0.7;
+  width: 400px;
+  border-radius: 20px;
+}
+.home .top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.name{
+  margin-bottom: 20px;
+  border-radius: 10px;
+
+}
+.button{
+  margin-bottom: 20px;
+}

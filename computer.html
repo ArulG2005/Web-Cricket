@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wc-Computer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Cricket</h1>
+    </header>
+   <div class="ground">
+    <div class="img">
+    <img id="img" src="/image/Untitled.png" alt="bg">
+</div>
+        <div>
+            <ul class="detail">
+                <div class="left">
+                    <div class="set-top">
+                <li class="scor">Score : <span id="totscore">00</span></li>
+                <li class="we">Wicket : <span id="weco">0</span></li>
+                <li id="b1"><span class=" b1">bowler...</span></li>
+            </div>
+                <li class="balaction"><span>fast</span></li>
+            </div>
+            <div class="right">
+                <div class="ovbal">
+                <li class="ov">Over : <span id="over">00</span></li>
+                <li class="bal">Ball : <span id="ball">0</span></li>
+            </div>
+                <li id="bm1" ><span class=" bm1">R Sharma</span></li>
+                <li id="bm2"><span class=" bm2"> KL Rahul</span></li>
+           
+            <li class="bataction"><span>Hit</span></li>
+            
+            </div>
+            </ul>
+            <div class="animi">
+                <div id="timer">
+                    <h3></h3>
+                </div>
+                <h1>All the best</h1>
+               
+            </div>
+            <div class="play">
+                <button onclick="bowling()" class="bol">Bowling</button>
+                <button onclick="run()" disabled class="bat">Batting</button>
+            </div>
+        </div>
+</div> 
+<script src="script.js"></script>
+</body>
+</html>
